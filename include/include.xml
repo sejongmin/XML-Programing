@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<lib:memo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.library.org include.xsd"
+    xmlns:lib="http://www.library.org">
+    <lib:body>
+        <lib:p>My First XML Document.</lib:p>
+        <lib:p>Hello world!</lib:p>
+    </lib:body>
+</lib:memo>
