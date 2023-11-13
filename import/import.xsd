@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.library.org"
+    xmlns:lib="http://www.library.org"
+    xmlns:exa="http://www.example.org">
+    <xsd:import namespace="http://www.example.org" schemaLocation="import1.xsd" />
+    <xsd:element name="memo">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="exa:body" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
