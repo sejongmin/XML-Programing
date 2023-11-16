@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="ex2-1.css"?>
+
+<memo>
+  <header>
+    <to> 
+      <heading> To: </heading> 
+      <name> Gildong Hong </name>
+    </to>
+    <from> 
+      <heading> From: </heading> 
+      <name> Gilsan Jang </name>
+    </from>
+    <date> 2020. 9. 11. </date>
+  </header>
+  <body> 
+    <p> My First XML Document. </p> 
+    <p> Hello world! </p> 
+  </body> 
+</memo>

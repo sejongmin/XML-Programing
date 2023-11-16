@@ -1,0 +1,47 @@
+memo {
+	display: block;
+}
+
+header {
+	display: block;
+}
+
+to {
+	display: block;
+}
+
+from {
+	display: block;
+}
+
+heading
+{ 
+	font-family: Arial Black;
+}
+
+to name
+{
+	font-style: italic;
+}
+
+from name
+{
+	font-weight: bold;
+}
+
+date
+{ 
+	display: block; 
+	text-align: right; 
+}
+
+body
+{ 
+	display: block; 
+	margin-top: 1em; 
+}
+
+p {
+	display: block;
+	margin-top: 0.5em;
+}
