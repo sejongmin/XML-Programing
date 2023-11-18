@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<purchaseOrder>
+  <item>
+    <productName>Dishwasher</productName>
+     <quantity>1</quantity>
+  </item>
+  <items>
+    <productName>Monitor</productName>
+    <quantity>3</quantity>
+  </items>
+  <items>
+    <productName>Stand</productName>
+    <quantity>5</quantity>
+  </items>
+</purchaseOrder>

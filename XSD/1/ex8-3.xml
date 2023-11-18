@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<memo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ex8-4.xsd">
+  <life>
+    <work></work><eat></eat><play></play><sleep></sleep>
+    <!--<work></work><eat></eat><play></play><sleep></sleep><work></work><eat></eat><play></play><sleep></sleep>-->
+    <!--<eat></eat><work></work><work2></work2><sleep></sleep>-->
+    <!--<work></work><eat></eat><work2></work2><play></play><sleep></sleep>-->
+  </life>
+</memo>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exa:memo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.example.org ex1.xsd"
+    xmlns:exa="http://www.example.org">
+    <exa:body>
+        <exa:p> My First XML Document. </exa:p>
+        <exa:p> Hello world! </exa:p>
+    </exa:body>
+</exa:memo>

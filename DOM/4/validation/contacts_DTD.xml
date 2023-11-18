@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE contacts SYSTEM "contacts.dtd">
+
+<contacts> 
+  <contact title="MR"> 
+    <firstname>Edwin</firstname> 
+    <lastname>Dankert</lastname>
+  </contact> 
+  <contact title="MS"> 
+    <firstname>Edwin</firstname> 
+    <!--<firstname></firstname>-->
+    <lastname>Dankert</lastname>
+  </contact> 
+</contacts>

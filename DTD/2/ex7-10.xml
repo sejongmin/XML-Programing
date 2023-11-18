@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book_catalog SYSTEM "ex7-7.dtd">
+<book_catalog>
+  <book id="001">
+    <title>Creating XML Homepage</title>
+    <author_group>
+      <author number="1">Jinseok Chae</author>
+      <author number="2">Gildong Hong</author>
+    </author_group>
+    <info>
+      <publisher> Honglung Publishing Company</publisher>
+      <pub_date>2000-09-10</pub_date>
+      <isbn>89-7283-103-4</isbn>
+      <cover type="paperback"> paperback </cover>
+    </info>
+    <comments>XML book for beginners</comments>
+  </book>
+</book_catalog>

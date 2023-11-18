@@ -1,0 +1,14 @@
+<!ELEMENT book_catalog (book+)> 
+<!ELEMENT book (title, author_group, info, comments?)> 
+<!ATTLIST book id CDATA #REQUIRED> 
+<!ELEMENT title (#PCDATA)> 
+<!ELEMENT author_group (author+)> 
+<!ELEMENT author (#PCDATA)> 
+<!ATTLIST author number CDATA #IMPLIED> 
+<!ELEMENT info (publisher, pub_date, isbn, cover?)> 
+<!ELEMENT publisher (#PCDATA)> 
+<!ELEMENT pub_date (#PCDATA)> 
+<!ELEMENT isbn (#PCDATA)> 
+<!ELEMENT cover EMPTY> 
+<!ATTLIST cover type (paperback | hardback) "paperback"> 
+<!ELEMENT comments (#PCDATA)> 

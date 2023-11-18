@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE memo [
+<!ENTITY Univ "Sejong University">
+<!ELEMENT memo (body) >
+<!ELEMENT body (p+) >
+<!ELEMENT p (#PCDATA) >
+]>
+
+<memo>
+  <body>
+    <p> My First XML Document. </p>
+    <p> Hello world! </p>
+    <p> Welcome! Thank you for visiting &Univ;. </p>
+  </body>
+</memo>

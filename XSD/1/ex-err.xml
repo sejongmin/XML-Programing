@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<book_catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="ex8-12.xsd">
+  <book id="001">
+    <title>Creating XML Homepage</title>
+    <author_group>
+      <author number="one">Jinseok Chae</author>
+      <author number="two">Gildong Hong</author>
+    </author_group>
+    <info>
+      <publisher>Honglung Publishing Company</publisher>
+      <pub_date>2000-13-10</pub_date>
+      <isbn>89-7283-103-40</isbn>
+      <cover type="paperback" />
+    </info>
+    <comments>XML book for beginners</comments>
+  </book>
+</book_catalog>

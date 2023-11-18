@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE memo SYSTEM "ex6-8.dtd">
+
+<memo>
+  <header>
+    <to>
+      <heading> To: </heading>
+      <name> Gildong Hong </name>
+    </to>
+    <from>
+      <heading> From: </heading>
+      <name> Gilsan Jang </name>
+    </from>
+    <date> 2004. 4. 15. </date>
+  </header>
+  <body>
+    <p> My first Document. </p>
+    <p> Hello world! </p>
+  </body>
+</memo>

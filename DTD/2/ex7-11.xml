@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE x [
+    <!ELEMENT x (a, (b | c | d), e)*>
+    <!ELEMENT a EMPTY>
+    <!ELEMENT b EMPTY>
+    <!ELEMENT c EMPTY>
+    <!ELEMENT d EMPTY>
+    <!ELEMENT e EMPTY>
+]>
+
+<x> <a /> <b /> <c /> </x>
+<!--x> <b /> <c /> <e /> </x-->
+<!--x> <a /> <c /> <e /> </x-->
+<!--x> <a /> <b /> <e /> <a /> <d /> <e /> </x-->
+<!--x> </x-->

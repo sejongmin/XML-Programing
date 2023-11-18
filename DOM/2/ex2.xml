@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<purchaseOrder>
+<!-- DOM tree traveral -->
+    <num>1</num>
+    <items>
+        <productName>Monitor</productName>
+        <quantity>3</quantity>
+    </items>
+</purchaseOrder>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<memo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ex8-8.xsd">
+  <body>
+    <pub>
+      <Title></Title>
+      <Author></Author>
+      <Author></Author>
+      <Author></Author>
+      <Date>2020</Date>
+    </pub>
+    <single>
+      <Title></Title>
+      <Author></Author>
+      <Date>2020</Date>
+    </single>
+  </body>
+</memo>

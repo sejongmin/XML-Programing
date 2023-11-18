@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="memo">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="life"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="life">
+    <xsd:complexType>
+      <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+          <xsd:element name="work" type="xsd:string"/>
+          <xsd:element name="eat" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:choice>
+          <xsd:element name="work2" type="xsd:string"/>
+          <xsd:element name="play" type="xsd:string"/>
+        </xsd:choice>
+        <xsd:element name="sleep" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema> 

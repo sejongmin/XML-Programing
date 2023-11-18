@@ -1,0 +1,15 @@
+<!ELEMENT memo (header, body) >
+<!ELEMENT header (to, from, date) >
+<!ELEMENT to (heading, name) >
+<!ATTLIST to 
+	age CDATA #REQUIRED
+	sex (male | female) "male" >
+<!ELEMENT from (heading, name) >
+<!ATTLIST from
+	age CDATA #REQUIRED
+	sex (male | female) "male" >
+<!ELEMENT heading (#PCDATA) >
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT date (#PCDATA) >
+<!ELEMENT p (#PCDATA) >
+<!ELEMENT body (p*) >

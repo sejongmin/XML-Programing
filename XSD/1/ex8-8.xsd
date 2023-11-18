@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="memo">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="body"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="body">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="pub" type="Publication"/>
+        <xsd:element name="single" type="SingleAuthorPublication"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="Publication">
+    <xsd:sequence>
+      <xsd:element name="Title" type="xsd:string" maxOccurs="unbounded"/>
+      <xsd:element name="Author" type="xsd:string" maxOccurs="unbounded"/>
+      <xsd:element name="Date" type="xsd:gYear"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name= "SingleAuthorPublication">
+    <xsd:complexContent>
+      <xsd:restriction base="Publication">
+        <xsd:sequence>
+          <xsd:element name="Title" type="xsd:string" maxOccurs="unbounded"/>
+          <xsd:element name="Author" type="xsd:string"/>
+          <xsd:element name="Date" type="xsd:gYear"/>
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema> 

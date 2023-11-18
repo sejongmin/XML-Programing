@@ -1,0 +1,9 @@
+<!ELEMENT memo (header, body) >
+<!ELEMENT header ((to, from, date) | (date, to, from)) >
+<!ELEMENT to (heading, name) >
+<!ELEMENT from (heading, name) >
+<!ELEMENT heading (#PCDATA) >
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT date (#PCDATA) >
+<!ELEMENT p (#PCDATA) >
+<!ELEMENT body (p*) >

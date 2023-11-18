@@ -1,0 +1,7 @@
+<!ELEMENT contacts (contact*)>
+
+<!ELEMENT contact (firstname,lastname)>
+<!ATTLIST contact title (MR|MS|MRS) "MS">
+
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>

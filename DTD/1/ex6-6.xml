@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE memo [
+<!ELEMENT memo (body) >
+<!ELEMENT body (p+) >
+<!ELEMENT p (#PCDATA) >
+]>
+
+<memo>
+  <body>
+    <p> My First XML Document. </p>
+  </body>
+  <p> Hello world! </p>
+</memo>

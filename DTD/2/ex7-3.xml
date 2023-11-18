@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE memo SYSTEM "ex7-4.dtd">
+
+<memo>
+  <header>
+    <to sex="female">
+      <heading>To:</heading>
+      <name>Gildong Hong</name>
+    </to>
+    <from age="35">
+      <heading>From:</heading>
+      <name>Gilsan Jang</name>
+    </from>
+    <date> 2004. 4. 15. </date>
+  </header>
+  <body>
+    <p> My First XML Document. </p>
+    <p> Hello world! </p>
+  </body>
+</memo>

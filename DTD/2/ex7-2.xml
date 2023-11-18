@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE memo [
+<!ENTITY hearts "&#x2661;" >
+<!ENTITY spades "&#x2660;" >
+<!ELEMENT memo (body) >
+<!ELEMENT body (p+) >
+<!ELEMENT p (#PCDATA) >
+]>
+
+<memo>
+  <body>
+    <p> &hearts; My First XML Document. </p>
+    <p> &spades; Hello world! </p>
+  </body>
+</memo>

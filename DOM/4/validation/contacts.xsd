@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.example.org" xmlns="http://www.example.org"
+  elementFormDefault="qualified">
+  <xs:element name="contacts">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="contact" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="contact">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="firstname" type="xs:NCName" />
+        <xs:element name="lastname" type="xs:NCName" />
+      </xs:sequence>
+      <xs:attribute name="title" use="optional" default="MS">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="MR" />
+            <xs:enumeration  value="MS" />
+            <xs:enumeration  value="MRS" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,14 @@
+<!ENTITY % age_sex
+  'age CDATA #REQUIRED
+  sex (male | female) "male"' >
+<!ELEMENT memo (header, body) >
+<!ELEMENT header (to, from, date) >
+<!ELEMENT to (heading, name) >
+<!ATTLIST to %age_sex; >
+<!ELEMENT from (heading, name) >
+<!ATTLIST from %age_sex; >
+<!ELEMENT heading (#PCDATA) >
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT date (#PCDATA) >
+<!ELEMENT p (#PCDATA) >
+<!ELEMENT body (p*) >

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="ex5-7.xsl"?>
+
+<memo>
+  <body>
+    <p> My first Document. </p>
+    <p> Hello world! </p>
+    <figure s="flower.jpg" www="400" hh="333" aq="A picture of flowers" />
+  </body>
+</memo>

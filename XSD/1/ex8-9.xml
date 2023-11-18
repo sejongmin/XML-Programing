@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<memo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:noNamespaceSchemaLocation="ex8-10.xsd">
+  <header> 
+    <to gender="female">
+      <heading>To:</heading>
+      <name>Gildong Hong</name>
+    </to>
+    <from age="35">
+      <heading>From:</heading>
+      <name>Gilsan Jang</name>
+    </from>
+    <date>2004-04-15</date>
+  </header>
+  <body> 
+    <p> My First XML Document. </p>
+    <p> Hello world! </p>
+  </body> 
+</memo> 

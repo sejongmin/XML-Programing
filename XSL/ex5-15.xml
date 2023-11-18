@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="ex5-16.xsl"?>
+
+<products>
+  <food>
+    <item>Honey Bread</item>
+    <price>3000</price>
+  </food>
+  <food>
+    <item>Cookie</item>
+    <price>1000</price>
+  </food>
+  <beverage>
+    <item>Americano</item>
+    <price>2500</price>
+  </beverage>
+  <beverage>
+    <item>Capuccino</item>
+    <price>2800</price>
+  </beverage>
+</products>

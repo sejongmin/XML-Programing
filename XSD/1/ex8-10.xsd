@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="memo">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="header"/>
+        <xsd:element ref="body"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="header">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="to" type="tofromType"/>
+        <xsd:element name="from" type="tofromType"/>
+        <xsd:element name="date" type="xsd:date"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="body">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="p" type="xsd:string" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="tofromType">
+    <xsd:sequence>
+      <xsd:element name="heading" type="xsd:string"/>
+      <xsd:element name="name" type="xsd:string"/>
+    </xsd:sequence>
+    <xsd:attribute name="age" type="xsd:integer" use="optional"/>
+    <xsd:attribute name="gender" type="genderType" default="male"/>
+  </xsd:complexType>
+  <xsd:simpleType name="genderType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="male"/>
+      <xsd:enumeration value="female"/>
+    </xsd:restriction>
+  </xsd:simpleType> 
+</xsd:schema>

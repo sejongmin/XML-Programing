@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.example.org"
+  xmlns:lib="http://www.example.org"
+  elementFormDefault="qualified">
+  <element name="memo">
+    <complexType>
+      <sequence>
+        <element ref="lib:body" />
+      </sequence>
+    </complexType>
+  </element>
+  <element name="body">
+    <complexType>
+      <sequence>
+        <element name="p" type="string" maxOccurs="unbounded" />
+      </sequence>
+    </complexType>
+  </element>
+</schema>

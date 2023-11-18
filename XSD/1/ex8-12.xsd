@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="book_catalog">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="book" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="book">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="title" type="xsd:string"/>
+        <xsd:element ref="author_group"/>
+        <xsd:element ref="info"/>
+        <xsd:element name="comments" type="xsd:string"/>
+      </xsd:sequence>
+      <xsd:attribute name="id" type="xsd:string" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="author_group">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="author" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="author">
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extension base="xsd:string">
+          <xsd:attribute name="number" type="xsd:integer" use="optional"/>
+        </xsd:extension>
+      </xsd:simpleContent>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="info">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="publisher" type="xsd:string"/>
+        <xsd:element name="pub_date" type="xsd:date"/>
+        <xsd:element name="isbn" type="isbnType"/>
+        <xsd:element ref="cover"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="cover">
+    <xsd:complexType>
+      <xsd:attribute name="type" type="typeType" use="optional" default="paperback"/>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:simpleType name="isbnType">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{2}-\d{4}-\d{3}-\d{1}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="typeType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="hardback"/>
+      <xsd:enumeration value="paperback"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>
