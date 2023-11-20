@@ -12,7 +12,6 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 public class AttributeShow {
-
   public static String uri;
 
   public AttributeShow() {
@@ -37,7 +36,8 @@ public class AttributeShow {
       e.printStackTrace(System.err);
     }
   }
-public void traverse(Node node, String indent) {
+
+  public void traverse(Node node, String indent) {
     if (node == null)
       return;
     int type = node.getNodeType();

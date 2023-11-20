@@ -24,19 +24,19 @@ public class DOMTraverse {
       
     } catch (FactoryConfigurationError e) {
       // unable to get a document builder factory
-    	e.printStackTrace(System.err);
+      e.printStackTrace(System.err);
     } catch (ParserConfigurationException e) {
       // parser was unable to be configured
-    	e.printStackTrace(System.err);
+      e.printStackTrace(System.err);
     } catch (SAXException e) {
       // parsing error
-    	e.printStackTrace(System.err);
+      e.printStackTrace(System.err);
     } catch (IOException e) {
       // i/o error
-    	e.printStackTrace(System.err);
+      e.printStackTrace(System.err);
     }
   }
- 
+
   public void traverse (Node node, String indent) {
     if ( node == null )
       return;
@@ -46,11 +46,9 @@ public class DOMTraverse {
     case Node.DOCUMENT_NODE:
       System.out.println(indent + "[Document] " + node.getNodeName());
       break;
-        		
     case Node.ENTITY_NODE:
       System.out.println(indent + "[ENTITY] " + node.getNodeName());
       break;
-        
     case Node.ELEMENT_NODE:
       System.out.println(indent + "[Element] " + node.getNodeName());
       break;

@@ -23,16 +23,16 @@ public class DOMNodeFind {
       
     } catch (FactoryConfigurationError e) {
       // unable to get a document builder factory
-    	e.printStackTrace(System.err);
+      e.printStackTrace(System.err);
     } catch (ParserConfigurationException e) {
       // parser was unable to be configured
-    	e.printStackTrace(System.err);
+      e.printStackTrace(System.err);
     } catch (SAXException e) {
       // parsing error
-    	e.printStackTrace(System.err);
+      e.printStackTrace(System.err);
     } catch (IOException e) {
       // i/o error
-    	e.printStackTrace(System.err);
+      e.printStackTrace(System.err);
     }
   }
     
@@ -68,7 +68,7 @@ public class DOMNodeFind {
     if(node.getNodeType() != Node.TEXT_NODE		
           && node.getNodeType() != Node.COMMENT_NODE)
       index++;
- 
+      
     return index;		
   }
 
