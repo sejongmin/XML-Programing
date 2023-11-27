@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><book_catalog>
+   <book>
+      <title>XML Programming</title>
+      <author>J. Chae</author>
+      <publisher>Hongreung publishing company</publisher>
+   </book>
+   <book>
+      <title>Web Programming</title>
+      <author>G. Hong</author>
+      <publisher>Science publishing company</publisher>
+   </book>
+</book_catalog>
